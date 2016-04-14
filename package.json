@@ -1,10 +1,9 @@
 {
-  "name": "gmaps",
+  "name": "common-path-finder",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "author": "Manish Garg <manishgarg2222@gmail.com>",
-  "license": "ISC",
   "devDependencies": {
     "eslint": "^2.7.0"
   },
