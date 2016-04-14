@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-</head>
+<head></head>
 
 <body>
+    <h3>Common Path Finder</h3>
     <div id="dashboard">
         <div>
-            User 1
+            User 1(Red)
             <button id="userABtn" onclick=updateLoctions()>Choose from map</button>
             From <span id="userALocation1"></span> To <span id="userALocation2"></span>
         </div>
         <div>
-            User 2
+            User 2(Blue)
             <button id="userBBtn" onclick=updateLoctions()>Choose from map</button>
             From <span id="userBLocation1"></span> To <span id="userBLocation2"></span>
         </div>
-        <button onclick="getCommonPath()">Common Path</button>
-        From <span id="commonLocation1"></span> To <span id="commonLocation2"></span>         
+        Common(Black)
+        <button onclick="getCommonPath()">Get Common Path</button>
+        From <span id="commonLocation1"></span> To <span id="commonLocation2"></span>
     </div>
-    <div id="googleMap" style="width:1000px;height:650px;"></div>
-
+    <div id="googleMap" style="width:1000px;height:500px;"></div>
+    <span>Manish Garg, 2016</span>
 </body>
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script src="main.js"></script>

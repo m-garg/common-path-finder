@@ -103,6 +103,7 @@ function getCommonPath() {
         for (idxB = 0; idxB < pathsB.length; idxB++) {
             if (pathsA[idx].equals(pathsB[idxB])) {
                 commonPaths.push(pathsA[idx]);
+                break;
             }
         }
     }
@@ -132,7 +133,6 @@ function buildAndGetPath(options, dd, cb) {
         if (status == google.maps.DirectionsStatus.OK) {
             dd.setDirections(result);
             dd.setMap(map);
-            console.log(result)
             return cb(result.routes[0]);
         }
         return cb([]);
