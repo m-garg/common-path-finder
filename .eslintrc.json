@@ -11,8 +11,7 @@
     },
     "rules": {
         "linebreak-style": [
-            "warn",
-            "unix"
+            "off"
         ],
         "no-console":[
             "off"

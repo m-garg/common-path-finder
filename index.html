@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script src="main.js"></script>
 </head>
 
 <body>
+<div id="dashboard">
+        <div>
+          <button id="userABtn" onclick=updateLoctions()>Choose from map</button>            
+          <input id="userALocation1"></input>
+          <input id="userALocation2"></input>
+        </div>
+        <div>
+          <button id="userBBtn" onclick=updateLoctions()>Choose from map</button>
+          <input id="userBLocation1"></input>
+          <input id="userBLocation2"></input>
+        </div>
+        <button onclick="getCommonPath()">Common Path</button>
+</div>
 <div id="googleMap" style="width:1000px;height:650px;"></div>
-</body>
 
+</body>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="main.js"></script>
 </html>
