@@ -1,7 +1,7 @@
 {
   "name": "common-path-finder",
   "version": "0.0.1",
-  "description": "",
+  "description": "Find common path between two paths, so that you could share your ride.",
   "main": "index.js",
   "author": "Manish Garg <manishgarg2222@gmail.com>",
   "devDependencies": {
