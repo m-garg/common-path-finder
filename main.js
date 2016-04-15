@@ -99,9 +99,12 @@ function getCommonPath() {
         return;
     }
     var idx, idxB;
+    var threshold = 100;
     for (idx = 0; idx < pathsA.length; idx++) {
         for (idxB = 0; idxB < pathsB.length; idxB++) {
-            if (pathsA[idx].equals(pathsB[idxB])) {
+            //if (pathsA[idx].equals(pathsB[idxB])) {
+            console.log(google.maps.geometry.spherical.computeDistanceBetween(pathsA[idx],pathsB[idxB]))
+            if (google.maps.geometry.spherical.computeDistanceBetween(pathsA[idx],pathsB[idxB]) < threshold){
                 commonPaths.push(pathsA[idx]);
                 break;
             }
